@@ -14,33 +14,28 @@
   },
   "auth": {
     "amplifyreactgraphql011609ae": {
-      "service": "Cognito",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [],
       "customAuth": false,
+      "dependsOn": [],
       "frontendAuthConfig": {
-        "socialProviders": [],
-        "usernameAttributes": [],
-        "signupAttributes": [
-          "EMAIL"
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
         ],
         "passwordProtectionSettings": {
           "passwordPolicyMinLength": 8,
           "passwordPolicyCharacters": []
         },
-        "mfaConfiguration": "OFF",
-        "mfaTypes": [
-          "SMS"
+        "signupAttributes": [
+          "EMAIL"
         ],
+        "socialProviders": [],
+        "usernameAttributes": [],
         "verificationMechanisms": [
           "EMAIL"
         ]
       },
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyb41f8d3880eb4-staging-30311-deployment/amplify-cfn-templates/auth/amplifyreactgraphql011609ae-cloudformation-template.json",
-        "logicalId": "authamplifyreactgraphql011609ae"
-      },
-      "lastPushTimeStamp": "2023-02-02T15:14:17.819Z",
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
       "output": {
         "UserPoolId": "us-east-2_TYhQiKcZw",
         "AppClientIDWeb": "7nvvjacaic9cr02ods94ksj1tr",
@@ -49,6 +44,11 @@
         "UserPoolArn": "arn:aws:cognito-idp:us-east-2:908306997848:userpool/us-east-2_TYhQiKcZw",
         "IdentityPoolName": "amplifyreactgraphql011609ae_identitypool_011609ae__staging",
         "UserPoolName": "amplifyreactgraphql011609ae_userpool_011609ae"
+      },
+      "lastPushTimeStamp": "2023-02-04T17:29:35.853Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyb41f8d3880eb4-staging-30311-deployment/amplify-cfn-templates/auth/amplifyreactgraphql011609ae-cloudformation-template.json",
+        "logicalId": "authamplifyreactgraphql011609ae"
       },
       "lastPushDirHash": "nB+1Z9l1R5HVrEa9OkHSm6+mjeE="
     }
